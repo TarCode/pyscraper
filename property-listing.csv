@@ -1,0 +1,149 @@
+bedrooms,location,area(m2),price(ZAR)
+2.0,Green Point,76.0,3999000.0
+3.0,Belhar,195.0,690000.0
+3.0,Rondebosch,160.0,3695000.0
+1.0,Cape Town City Centre,53.0,1400000.0
+1.0,Mouille Point,33.0,1999999.0
+3.0,Claremont Upper,577.0,7750000.0
+3.0,Claremont,751.0,4450000.0
+5.0,Southfield,809.0,2400000.0
+3.0,Sea Point,227.0,7950000.0
+3.0,Lakeside,496.0,1895000.0
+3.0,Pinelands,1.0,3495000.0
+4.0,Tamboerskloof,268.0,6595000.0
+4.0,Observatory,357.0,3000000.0
+1.0,Kenilworth Upper,47.0,1499000.0
+2.0,Costa Da Gama,43.0,750000.0
+2.0,Sea Point,139.0,5600000.0
+1.0,De Waterkant,60.0,2800000.0
+3.0,Plumstead,495.0,2690000.0
+2.0,Sea Point,67.0,5200000.0
+0,Bantry Bay,26.0,925000.0
+0,Sea Point,38.0,1925000.0
+2.0,Kenilworth,77.0,1595000.0
+2.0,Waterfront,115.0,11995000.0
+2.0,De Waterkant,67.0,8300000.0
+3.0,Lakeside,191.0,2395000.0
+1.0,Cape Town City Centre,56.0,3360000.0
+1.0,Newlands,46.0,1425000.0
+2.0,Observatory,75.0,3500000.0
+3.0,Pinelands,818.0,2800000.0
+2.0,Sea Point,139.0,5600000.0
+2.0,Claremont,76.0,1975000.0
+2.0,De Waterkant,123.0,12650000.0
+3.0,Tamboerskloof,113.0,2795000.0
+2.0,Plumstead,102.0,2950000.0
+4.0,Woodstock,138.0,2495000.0
+1.0,Muizenberg,34.0,895000.0
+1.0,Foreshore,55.0,3000000.0
+0,Rondebosch,28.0,1195000.0
+1.0,Zonnebloem,57.0,1450000.0
+1.0,De Waterkant,65.0,3785000.0
+1.0,Green Point,46.0,1799000.0
+0,Rondebosch,28.0,1195000.0
+2.0,Sea Point,166.0,10950000.0
+2.0,Observatory,75.0,2395000.0
+2.0,Salt River,95.0,2395000.0
+4.0,Rondebosch East,503.0,3250000.0
+2.0,Green Point,90.0,3495000.0
+3.0,Claremont,459.0,4895000.0
+2.0,Pinelands,82.0,1595000.0
+2.0,Green Point,80.0,3650000.0
+3.0,Plumstead,76.0,1450000.0
+2.0,Muizenberg,198.0,1265000.0
+3.0,Claremont,314.0,5295000.0
+3.0,Constantia,95.0,3450000.0
+5.0,Kenwyn,618.0,2450000.0
+1.0,Oranjezicht,49.0,2195000.0
+3.0,Pinelands,116.0,1850000.0
+2.0,Green Point,90.0,3495000.0
+2.0,Claremont,90.0,2690000.0
+3.0,Cape Town City Centre,160.0,2500000.0
+2.0,Heathfield,160.0,1475000.0
+4.0,Southfield,750.0,2295000.0
+3.0,Mouille Point,153.0,13750000.0
+2.0,Mouille Point,98.0,5995000.0
+3.0,Muizenberg,255.0,1595000.0
+3.0,Fresnaye,230.0,10995000.0
+4.0,Newlands,625.0,6250000.0
+1.0,Wynberg,64.0,1100000.0
+8.0,Camps Bay,1.0,65000000.0
+0.0,Cape Town City Centre,37.0,1100000.0
+3.0,Diep River,201.0,1750000.0
+2.0,Plumstead,66.0,1195000.0
+3.0,Claremont,377.0,4580000.0
+1.0,Cape Town City Centre,73.0,1995000.0
+3.0,Muizenberg,255.0,1595000.0
+1.0,Cape Town City Centre,52.0,1450000.0
+0,Cape Town City Centre,41.0,2207850.0
+2.0,Sea Point,97.0,2990000.0
+3.0,Sea Point,168.0,6550000.0
+1.0,Cape Town City Centre,46.0,2150000.0
+4.0,Oranjezicht,496.0,0
+3.0,Pinelands,1.0,2950000.0
+1.0,Woodstock,52.0,1890000.0
+2.0,Kenilworth,54.0,950000.0
+2.0,Kenilworth,54.0,950000.0
+5.0,Constantia,2.0,9950000.0
+1.0,Mouille Point,67.0,3295000.0
+1.0,De Waterkant,65.0,2430000.0
+2.0,Kenilworth Upper,70.0,2495000.0
+2.0,Sea Point,91.0,3450000.0
+2.0,Observatory,179.0,2750000.0
+3.0,Lakeside,125.0,2200000.0
+2.0,Fresnaye,131.0,6200000.0
+2.0,Plumstead,68.0,1295000.0
+2.0,Rondebosch,75.0,1695000.0
+0,Cape Town City Centre,54.0,1995000.0
+2.0,Wynberg Upper,77.0,1595000.0
+2.0,Gardens,79.0,2550000.0
+1.0,Green Point,56.0,2950000.0
+3.0,Constantia,1.0,5900000.0
+2.0,Plumstead,65.0,1050000.0
+1.0,Sea Point,75.0,3150000.0
+2.0,Kenilworth,67.0,1850000.0
+1.0,Heathfield,42.0,1200000.0
+2.0,Gardens,151.0,4750000.0
+2.0,Waterfront,120.0,12900000.0
+3.0,Claremont,165.0,2495000.0
+3.0,Gardens,213.0,5295000.0
+3.0,Marina Da Gama,230.0,1495000.0
+2.0,Kalk Bay,211.0,12500000.0
+2.0,Muizenberg,62.0,1150000.0
+1.0,Heathfield,42.0,1200000.0
+3.0,Claremont,362.0,3995000.0
+3.0,Muizenberg,144.0,1690000.0
+2.0,Sea Point,83.0,5200000.0
+1.0,Rondebosch,75.0,1449000.0
+2.0,Green Point,82.0,3800000.0
+1.0,Oranjezicht,66.0,2300000.0
+1.0,Cape Town City Centre,61.0,1795000.0
+0.0,Claremont Upper,40.0,1295000.0
+3.0,Marina Da Gama,299.0,3450000.0
+0,Cape Town City Centre,35.0,1808900.0
+3.0,Plumstead,440.0,2695000.0
+1.0,Gardens,46.0,1850000.0
+2.0,Claremont Upper,60.0,2050000.0
+3.0,Gardens,137.0,5200000.0
+3.0,Rondebosch Village,87.0,2225000.0
+1.0,Cape Town City Centre,44.0,1695000.0
+3.0,Newlands,230.0,5945000.0
+1.0,Oranjezicht,66.0,2300000.0
+0.0,Cape Town City Centre,37.0,1550000.0
+4.0,Maitland,357.0,1730000.0
+7.0,Fresnaye,636.0,29950000.0
+2.0,Maitland,55.0,650000.0
+2.0,Gardens,80.0,2295000.0
+1.0,Woodstock,70.0,1950000.0
+3.0,Heathfield,136.0,1395000.0
+2.0,Claremont Upper,60.0,2300000.0
+2.0,Sea Point,137.0,3950000.0
+3.0,Lakeside,624.0,3250000.0
+2.0,Muizenberg,45.0,900000.0
+1.0,Cape Town City Centre,83.0,3095000.0
+0.0,Cape Town City Centre,37.0,1550000.0
+1.0,Zonnebloem,43.0,1250000.0
+12.0,Oranjezicht,600.0,0
+1.0,Sea Point,82.0,3995000.0
+3.0,Bergvliet,120.0,3250000.0
+3.0,Vredehoek,178.0,4195000.0

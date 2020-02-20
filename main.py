@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from unidecode import unidecode
 import csv
+import re
 
 """
     TODO: Process the CSV to clean the data and remove all strings 
@@ -33,25 +34,25 @@ def get_listings_per_page(url, number_of_pages):
                 location = location.text.strip()
                 price = price.text.strip()
                 area = area.text.strip()
-
-                processed_listings.append({
-                    "title": title,
-                    "location": location,
-                    "area": area,
-                    "price": unidecode(price)
-                })
+                if "house" in title.lower() or "apartment" in title.lower():
+                    processed_listings.append({
+                        "bedrooms":  float(re.search(r'\d+', title).group()) if "bedroom" in title.lower() else 0,
+                        "location": location,
+                        "area(m2)": float(re.search(r'\d+', area).group()),
+                        "price(ZAR)":  float(re.search(r'\d+', unidecode(price).replace(" ", "")).group()) if price != 'POA' else 0
+                    })
 
     return processed_listings
 
 
 URL = "https://www.property24.com/for-sale/cape-town/western-cape/432"
 
-processed_listing_data = get_listings_per_page(URL, 50)
+processed_listing_data = get_listings_per_page(URL, 10)
 
 print(processed_listing_data)
 
 with open('property-listing.csv', mode='w') as listings_file:
-    fieldnames = ['title', 'location', 'area', 'price']
+    fieldnames = ['bedrooms', 'location', 'area(m2)', 'price(ZAR)']
     writer = csv.DictWriter(listings_file, delimiter=',', quotechar='"', fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL)
     writer.writeheader()
     for prop_listing in processed_listing_data:
