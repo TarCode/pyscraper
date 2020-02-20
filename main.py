@@ -5,8 +5,7 @@ import csv
 import re
 
 """
-    TODO: Process the CSV to clean the data and remove all strings 
-    (Add bedrooms field and remove 'R' and space from pricing)
+    TODO: Enrich the dataset by getting bathrooms, parking spaces and pets/no pets
 """
 
 
@@ -38,21 +37,21 @@ def get_listings_per_page(url, number_of_pages):
                     processed_listings.append({
                         "bedrooms":  float(re.search(r'\d+', title).group()) if "bedroom" in title.lower() else 0,
                         "location": location,
-                        "area(m2)": float(re.search(r'\d+', area).group()),
-                        "price(ZAR)":  float(re.search(r'\d+', unidecode(price).replace(" ", "")).group()) if price != 'POA' else 0
+                        "area": float(re.search(r'\d+', area).group()),
+                        "price":  float(re.search(r'\d+', unidecode(price).replace(" ", "")).group()) if price != 'POA' else 0
                     })
 
     return processed_listings
 
 
-URL = "https://www.property24.com/for-sale/cape-town/western-cape/432"
+URL = "https://www.property24.com/apartments-for-sale/observatory/cape-town/western-cape/10157"
 
-processed_listing_data = get_listings_per_page(URL, 10)
+processed_listing_data = get_listings_per_page(URL, 8)
 
 print(processed_listing_data)
 
 with open('property-listing.csv', mode='w') as listings_file:
-    fieldnames = ['bedrooms', 'location', 'area(m2)', 'price(ZAR)']
+    fieldnames = ['bedrooms', 'location', 'area', 'price']
     writer = csv.DictWriter(listings_file, delimiter=',', quotechar='"', fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL)
     writer.writeheader()
     for prop_listing in processed_listing_data:
