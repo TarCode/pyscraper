@@ -3,6 +3,11 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 import csv
 
+"""
+    TODO: Process the CSV to clean the data and remove all strings 
+    (Add bedrooms field and remove 'R' and space from pricing)
+"""
+
 
 def get_listings_per_page(url, number_of_pages):
     processed_listings = []
