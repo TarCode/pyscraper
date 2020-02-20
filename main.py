@@ -28,14 +28,12 @@ def get_listings_per_page(url, number_of_pages):
                 location = location.text.strip()
                 price = price.text.strip()
                 area = area.text.strip()
-                description = description.text.strip()
 
                 processed_listings.append({
                     "title": title,
                     "location": location,
-                    "price": unidecode(price),
-                    "description": unidecode(description),
-                    "area": area
+                    "area": area,
+                    "price": unidecode(price)
                 })
 
     return processed_listings
@@ -43,12 +41,14 @@ def get_listings_per_page(url, number_of_pages):
 
 URL = "https://www.property24.com/for-sale/cape-town/western-cape/432"
 
-processed_listing_data = get_listings_per_page(URL, 20)
+processed_listing_data = get_listings_per_page(URL, 50)
 
 print(processed_listing_data)
 
-with open('property-listings.csv', mode='w') as listings_file:
-    writer = csv.writer(listings_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    for l in processed_listing_data:
-        writer.writerow([l['title'], l['location'], l['area'], l['price']])
+with open('property-listing.csv', mode='w') as listings_file:
+    fieldnames = ['title', 'location', 'area', 'price']
+    writer = csv.DictWriter(listings_file, delimiter=',', quotechar='"', fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL)
+    writer.writeheader()
+    for prop_listing in processed_listing_data:
+        writer.writerow(prop_listing)
 
