@@ -51,7 +51,7 @@ def get_listings_per_page(url, number_of_pages):
     return processed_listings
 
 
-URL = "https://www.property24.com/apartments-for-sale/gardens/cape-town/western-cape/9145"
+URL = "https://www.property24.com/apartments-for-sale/rondebosch/cape-town/western-cape/8682"
 
 processed_listing_data = get_listings_per_page(URL, 9)
 
