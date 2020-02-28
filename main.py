@@ -41,6 +41,7 @@ def get_listings_per_page(url, number_of_pages):
                 if "house" in title.lower() or "apartment" in title.lower():
                     processed_listings.append({
                         "bedrooms":  float(re.search(r'\d+', title).group()) if "bedroom" in title.lower() else 0,
+                        "type": "house" if "house" in title.lower() else "apartment",
                         "location": location,
                         "area": float(re.search(r'\d+', area).group()),
                         "bathrooms": bathrooms,
@@ -51,14 +52,14 @@ def get_listings_per_page(url, number_of_pages):
     return processed_listings
 
 
-URL = "https://www.property24.com/apartments-for-sale/rondebosch/cape-town/western-cape/8682"
+URL = "https://www.property24.com/for-sale/cape-town/western-cape/432"
 
-processed_listing_data = get_listings_per_page(URL, 9)
+processed_listing_data = get_listings_per_page(URL, 418)
 
 print(processed_listing_data)
 
 with open('property-listing.csv', mode='w') as listings_file:
-    fieldnames = ['bedrooms', 'location', 'area', 'bathrooms', 'parking', 'price']
+    fieldnames = ['bedrooms', 'type', 'location', 'area', 'bathrooms', 'parking', 'price']
     writer = csv.DictWriter(listings_file, delimiter=',', quotechar='"', fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL)
     writer.writeheader()
     for prop_listing in processed_listing_data:
